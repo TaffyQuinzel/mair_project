@@ -1,0 +1,58 @@
+\section{The experiment}
+The main question we would like to answer during the experiment is:
+\textit{Does the introducion of spelling errors make the chatbot come across as more human?}
+
+The experiment will now be described in detail.
+
+
+\subsection{Participants}
+The participants were 20 students of Utrecht University who volunteered. Participants ranged in age from 18 to 26, with a mean age of 21.65. Of the participants 50\% were male and 50\% female. The majority (40\%) had not previously heard of the Turing Test, the minority (25\%) had prior knowledge of the Turing Test and the rest (35\%) had heard of the test but not in detail.
+
+
+\subsection{Procedure}
+The participants were placed before a computer with two chat windows open, with ”Person 1” and with ”Person 2”. The participants were then told that they had to converse by chat interface with two people and they had to choose which one of
+
+the people was a real person and which one was a computer. There was a time limit set at three minutes, but they could stop at any moment before that when they had made a decision. They were prohibited from using emoticons and they could only ask one question per time. The participants each did two rounds of conversations in total.
+
+Person 1 was always the chatbot and Person 2 was always the same real person. The human controlling the chatbot followed a schedule, see figure 1, so that the first ten participants talked to the chatbot Mike (1) (footnote1 - http://www.eslfast.com/robot/english\_tutor.htm) and the last ten participants talked to the chatbot Rose (2) (footnote2 - http://brilligunderstanding.com/rosedemo.html). The schedule also indicated that each person had one conversation with the chatbot without added spelling errors and the other conversation had introduced spelling errors by a script. The script used the most common misspellings done by humans(citation needed) introduced according to the length of the sentence and a chance variable. The maximum amount of errors is calculated as 10\% of the amount of words in the sentence rounded down. And then there is a chance of 1/3 to introduce a spell error. The algorithm checks the words in the sentence given by the chatbot against a library of the most commonly misspelled words. When a match is found it replaces the original word with the misspelled word in the sentence. After the two rounds of conversations the participants proceeded to fill in the questionnaire, as described in section ??.
+
+
+\begin{table}[!ht]
+   \begin{center}
+      \caption{Distribution of conversations}
+      \label{tabdistributionofconversations}
+      \vskip 0.12in
+      \begin{tabular}[center]{| c | c | c |}
+         \hline
+         Chatbot & Control & With spelling errors \\
+         \hline \hline
+         Rose & 10 & 10\\
+         Mike & 10 & 10\\
+         \hline
+      \end{tabular}
+   \end{center}
+\end{table}
+
+\subsection{Results}
+To test our main hypothesis, namely that the introduction of generated spelling errors would allow a chatbot to perform better in a Turing test, a Wilcoxon signed-rank test has been performed, yet the result was not significant (Z = -1.14, p < 0.05).
+
+From an analysis of the post-experiment questionnaire we learn that 40\% of participants have never heard of the Turing Test. 35\% of participants had a vague notion of what the test is and 25\% of participants knew exactly what the Turing Test is.
+
+It is worth noting that we have found a significant positive correlation between prior knowledge of the Turing Test and the participants’ confidence in identifying the computer as the computer (r(40) = .39, p < 0.05).
+
+\subsection{Discussion}
+In this paper, we tested the hypothesis that the introduction of generated spelling errors would allow a chatbot to perform better in a Turing test. Contrary to our hypothesis, our results did not yield a significant effect. The aim of this discussion is to offer a number of methodological and theoretical arguments, as to why the results did not match our hypothesis. First, the spelling errors were automatically generated, and the amount of errors was set relative to the length of the chatbot’s response. We argue that there is a fine line between introducing too many spelling errors, and too few. In the former case, the chatbot’s response might be perceived as unreliable, while in the latter case, no effect will come of introducing the spelling errors, as they are too few to notice. As part of future work, pre-tests should be run so that an ‘optimal’ amount of introduced spelling errors might be found. Furthermore, the sample size in our experiment was rather small, and future experiments would benefit from a larger set of participants.
+
+As part of the data analysis, we have found a statistically significant positive correlation between prior knowledge of the Turing Test and the participants’ confidence in identifying the computer as the computer. It seems that participants who had prior knowledge of the test, were better equipped to test the chatbots, for example by asking questions that more effectively single out the computer; another example is that those participants were not surprised by the chatbot's ability to parse informal language. For future work, considering the participants’ knowledge of the test might prove important when designing the experiment and analyzing the results.
+
+We learn from the participants’ responses in the questionnaire, that a number of participants did find the chatbots more human when spelling errors were introduced (“Person 2 made a typo [that’s why I think he’s the human]”). Conversely, some participants found the computer’s perfectly punctuated responses to give away the computer’s identity (“the wording of person 2's answers and the perfect punctuation made me feel like they were a computer”). A recurring theme found in the participants’ responses, is that they found their questions ill understood by the chatbots (“person 2 did not answer the last question correctly”) or the replies given to them, odd (“Person 2 was the computer because he did not communicate in a logical manner. His answers were quite weird”) or out of place (“I don't think someone would respond "I'm happy to know you're doing fine" in a casual chat conversation..”). Further, it is evident by these responses that the chatbots’ behaviour heavily influenced their attempt to pass as humans as part of the test.
+
+To conclude, in this experiment we have set out to investigate whether we can modify the Turing Test in favour of the computer, by manipulating the computer’s responses via the introduction of spelling errors. In some cases it shows that adding spelling errors can have a benefit for the computer, but in general the hypothesis cannot be tested yet as the chatbots are still too primitive to give correct conversational responses.
+
+In order to zoom out and return to the larger picture, we would like to understand the implications of our findings on the main goal of the current research, namely to evaluate if and how a Turing Test could be used in future Artificial Intelligence research.
+
+Objections
+Variations
+...
+
+We can say that passing the turing test is not yet viable, but investigating the test and how to make computers pass it is a good way of learning more about human language interaction.
