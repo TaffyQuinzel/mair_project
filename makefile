@@ -1,7 +1,6 @@
 all:
-	xelatex main.tex -output-directory=build
-	bibtex main
-	xelatex main.tex -output-directory=build
-	xelatex main.tex -output-directory=build
-	mv *.aux build/
-	mv *.log build/
+	xelatex -output-directory=./build main.tex
+	bibtex ./build/main
+	xelatex -output-directory=./build main.tex
+	xelatex -output-directory=./build main.tex
+	mv ./build/main.pdf ./report.pdf
