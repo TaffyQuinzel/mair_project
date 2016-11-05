@@ -4,3 +4,6 @@ all:
 	xelatex -output-directory=./build main.tex
 	xelatex -output-directory=./build main.tex
 	mv ./build/main.pdf ./report.pdf
+
+clean:
+	rm ./build/*
