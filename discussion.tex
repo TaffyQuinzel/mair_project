@@ -44,7 +44,7 @@ As part of the data analysis, we have found a strong positive correlation betwee
    \label{convex4}
 \end{figure}
 
-We learn from the participants' responses in the questionnaire, that a number of participants did find the chatbots more human when spelling errors were introduced, see figure~\ref{convex1} (\textit{Person 2 made a typo [that's why I think he's the human]}).
+We learn from the participants' responses in the questionnaire, that a number of participants did find the chatbots more human when spelling errors were introduced, see Figure~\ref{convex1} (\textit{Person 2 made a typo [that's why I think he's the human]}).
 
 \begin{figure}[ht]
    \begin{center}
@@ -64,7 +64,7 @@ We learn from the participants' responses in the questionnaire, that a number of
    \label{convex1}
 \end{figure}
 
-Conversely, some participants found the computer's perfectly punctuated and spelled responses as a telltale of the computer's identity, see figure~\ref{convex2} (\textit{the wording of person 2's answers and the perfect punctuation made me feel like they were a computer}). A recurring theme found in the participants' responses, is that they found their questions ill understood by the chatbots, see figure~\ref{convex3} (\textit{person 2 did not answer the last question correctly}), or the replies given to them odd, see figure~\ref{convex4} (\textit{Person 2 was the computer because he did not communicate in a logical manner. His answers were quite weird}) or out of place, see figure \ref{convex5} (\textit{I don't think someone would respond "I'm happy to know you're doing fine" in a casual chat conversation..}).
+Conversely, some participants found the computer's perfectly punctuated and spelled responses as a telltale of the computer's identity, see Figure~\ref{convex2} (\textit{the wording of person 2's answers and the perfect punctuation made me feel like they were a computer}). A recurring theme found in the participants' responses, is that they found their questions ill understood by the chatbots, see Figure~\ref{convex3} (\textit{person 2 did not answer the last question correctly}), or the replies given to them odd, see Figure~\ref{convex4} (\textit{Person 2 was the computer because he did not communicate in a logical manner. His answers were quite weird}) or out of place, see Figure~\ref{convex5} (\textit{I don't think someone would respond "I'm happy to know you're doing fine" in a casual chat conversation..}).
 
 \begin{figure}[ht]
    \begin{center}
@@ -113,9 +113,9 @@ To conclude, in this experiment we have set out to investigate whether we can mo
 \subsection{General Discussion}
 In order to zoom out and return to the larger picture, we would like to understand the implications of our findings on the main goal of the current research, namely to evaluate if and how a Turing Test could be used in future Artificial Intelligence research. In order to do this, we will relate the outcome of the experiment to the literature reviewed in the first part of the paper.
 
-We have discussed a number of objections against the test, both practical and theoretical. The theoretical objections can't be refuted by the outcome of the experiment, since those objections are making philosophical rather than empirical claims. Still, we would like to mention them once again in the light of our executed experiment. The first theoretical objection is the Chinese Room argument made by Searle (Bron3), which states that a computer is not capable of real understanding of the symbols it is manipulating.
+We have discussed a number of objections against the test, both practical and theoretical. The theoretical objections can't be refuted by the outcome of the experiment, since those objections are making philosophical rather than empirical claims. Still, we would like to mention them once again in the light of our executed experiment. The first theoretical objection is the Chinese Room argument made by Searle~\cite{searle1980minds}, which states that a computer is not capable of real understanding of the symbols it is manipulating.
 
-From the log files of the conversations with the chatbots (see Appendix), we conclude that it is true that the chatbot does not always understand the question which it is given. There were many cases in which the chatbot didn't understand the questions from the interrogator, for instance figure~\ref{Example1}.
+From the log files of the conversations with the chatbots (see Appendix), we conclude that it is true that the chatbot does not always understand the question which it is given. There were many cases in which the chatbot didn't understand the questions from the interrogator, for instance in Figure~\ref{Example1}.
 
 \begin{figure}[ht]
    \begin{center}
@@ -129,9 +129,9 @@ From the log files of the conversations with the chatbots (see Appendix), we con
    \label{Example1}
 \end{figure}
 
-The answer given by Rose in figure~\ref{Example1} is not the right answer to the question. The question is whether Rose studies, i.e. whether she is a student or whether she is learning a particular subject. The algorithm powering Rose did not catch that, but rather picked up the word \textit{study}, which is a type of room in the house, and constructed an answer related to that. The appropriate question for this answer here would be whether Rose has a study.
+The answer given by Rose in Figure~\ref{Example1} is not the right answer to the question. The question is whether Rose studies, i.e. whether she is a student or whether she is learning a particular subject. The algorithm powering Rose did not catch that, but rather picked up the word \textit{study}, which is a type of room in the house, and constructed an answer related to that. The appropriate question for this answer here would be whether Rose has a study.
 
-But Searle's Chinese Room argument goes further. It says that even when a computer gives a seemingly good reply to the question it still doesn't understand its own reply - in the same way that Sam who is talking Chinese doesn't actually understand Chinese. To make this more concrete, we look at figure~\ref{Example2}.
+But Searle's Chinese Room argument goes further. It says that even when a computer gives a seemingly good reply to the question it still doesn't understand its own reply - in the same way that Sam who is talking Chinese doesn't actually understand Chinese. To make this more concrete, we look at Figure~\ref{Example2}.
 
 \begin{figure}[ht]
    \begin{center}
@@ -185,7 +185,7 @@ Humans would expect as an answer to such a question an enumeration of features o
    \label{Example4}
 \end{figure}
 
-Although the answer by Rose in figure~\ref{Example4} is not really incorrect, it is also not an answer which a human would expect to such a question. An intuitive answer to such a question would be \textit{I'm (fine | ok | not feeling very well)}. However, Rose answers this question from a more broad point of view, rather than basing her answer on her emotional state at the current moment.
+Although the answer by Rose in Figure~\ref{Example4} is not really incorrect, it is also not an answer which a human would expect to such a question. An intuitive answer to such a question would be \textit{I'm (fine | ok | not feeling very well)}. However, Rose answers this question from a more broad point of view, rather than basing her answer on her emotional state at the current moment.
 
 This example shows that indeed the computer gets easily identified when it gives answers in a non-human way, even though the answers are not necessarily wrong or non-intelligent. In our conducted experiment, we used that idea when we generated spelling mistakes in the chatbot’s answers. We can see from the results that, without spelling errors, 90\% of the participants indicated that they are more confident about the chatbot being the computer than the human being a computer, i.e. 90\% correctly identified the computer if we transform their probabilistic answer into a binary scale. Therefore, even though Mike and Rose are among the best performing chatbots in the Loebner competition, we are far away of achieving the aimed score of 50\% when using these chatbots in a Turing Test. Nevertheless, the performance improved a lot by generating spelling errors; only 70\% of the participants  indicated that they are more confident about the chatbot being the computer than the human being a computer, i.e. 70\% correctly identified the computer if we transform their probabilistic answer into a binary scale. The results thus show that when we introduce spelling errors to the chatbot’s responses, we get closer to the aimed score of 50\%.
 
