@@ -5,8 +5,18 @@
 \usepackage{apacite}
 
 \usepackage{color}
+\usepackage{multirow}
 \usepackage{textpos}
 \usepackage{enumitem}
+\usepackage{listings}
+\lstset{%
+   sensitive=true,
+   basicstyle=\footnotesize\ttfamily,
+   frame=single,
+   breaklines=true,
+   postbreak=\raisebox{0ex}[0ex][0ex]{\ensuremath{\color{red}\hookrightarrow\space}},
+   keepspaces=true
+}
 
 \usepackage{graphicx}
 \graphicspath{{./plaatjes/}}
@@ -18,8 +28,8 @@
 
 \title{Validating the Turing Test: Exploring the Role of Turing’s Test in Future AI Research}
 {
-\author{{\large \bf Marjolein de Vries, Louis van der Burg, Sophie Horsman, Maayan Shvo} \\
-   student numbers: 111111111, 5981271, 111111111, 111111111 \\
+\author{{\large \bf Louis van der Burg, Sophie Horsman, Maayan Shvo, Marjolein de Vries} \\
+   student numbers: 5981271, 3770249, 5920833, 4302486 \\
 }
 
 
@@ -44,8 +54,10 @@
 
 \bibliography{turing}
 
+\clearpage
 \section{Appendix}
    \input{evaluation}
+   \input{script}
    \input{schedule}
    \input{logs}
 

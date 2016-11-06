@@ -1,0 +1,65 @@
+\subsection{The spelling error script}
+
+\begin{lstlisting}[language=Python]
+from random import randint
+
+all_cnt = 0
+
+#Misspellings introductions#
+dic_spelling = {}
+f = open("list_spelling.txt", 'r')
+for line in f:
+	misspelled, spelled = line.partition("||")[::2]
+	spelled_options = spelled.split(',')
+	for word in spelled_options:
+		dic_spelling[word.strip()] = misspelled.strip()
+
+experiment_num = raw_input("ENTER EXPERIMENT NUMBER: ")
+
+while(1):
+	user_input = raw_input("ENTER CHATBOT INPUT: ")
+	user_input_words = user_input.split(' ')
+	input_len = len(user_input_words)
+	num_miss = int(0.1 * input_len)
+	cnt = 0
+
+
+	output = ""
+
+	for word in user_input_words:
+		if word == 'Mitsuku':
+			out_word = 'Emma'
+		else:
+			out_word = word
+		if word in dic_spelling.keys() and cnt <= num_miss:
+			rand_int = randint(0,9)
+			if (rand_int * 3) > 20:
+				out_word = dic_spelling[word]
+				cnt += 1
+
+		output += out_word + " "
+
+	f = open('experiment_{}'.format(experiment_num), 'a+')
+	f.write('number of introduced spelling errors:\t')
+	f.write(str(cnt))
+	f.write('\n')
+	f.write("\t\tOriginial: " + user_input)
+	f.write('\n')
+	f.write("\t\tTransformed: " + output)
+	f.write('\n')
+	f.write('\n')
+	f.write('\n')
+	f.close()
+	all_cnt += cnt
+
+	print('================')
+	print('TRANSFORMED OUTPUT')
+	print('================')
+	print(' ')
+	print(' ')
+	print(output)
+	print(' ')
+	print(' ')
+	print(' ')
+	print(' ')
+\end{lstlisting}

@@ -2,11 +2,110 @@
 Our research question was: \textit{How can and should a Turing Test be used in future Artificial Intelligence research?} We have addressed this question by performing both a literature review and in executing an experiment. In this section, we will discuss both the experiment itself and how the outcome of the experiment relates to the literature review.
 
 \subsection{Experiment Discussion}
-In this experiment, we tested the hypothesis that the introduction of generated spelling errors would allow a chatbot to perform better in a Turing test. Contrary to our hypothesis, our results did not yield a significant effect. The aim of this experiment discussion is to offer a number of methodological and theoretical arguments, as to why the results did not match our hypothesis. First, the spelling errors were automatically generated, and the amount of errors was set relative to the length of the chatbot's response. We argue that there is a fine line between introducing too many spelling errors, and too few. In the former case, the chatbot's response might be perceived as unreliable, while in the latter case, no effect will come of introducing the spelling errors, as they are too few to notice. As part of future work, pre-tests should be run so that an \textit{optimal} amount of introduced spelling errors might be found.           Furthermore, the sample size in our experiment was rather small. 20 participants is not enough to measure the effect of a relatively small manipulation in an experiment with 4 conditions. Future experiments would therefore benefit from a larger set of participants.
+In this experiment, we tested the hypothesis that the introduction of generated spelling errors would allow a chatbot to perform better in a Turing test. Contrary to our hypothesis, our results did not yield a significant effect. The aim of this experiment discussion is to offer a number of methodological and theoretical arguments, as to why the results did not match our hypothesis. First, the spelling errors were automatically generated, and the amount of errors was set relative to the length of the chatbot's response. We argue that there is a fine line between introducing too many spelling errors, and too few. In the former case, the chatbot's response might be perceived as unreliable, while in the latter case, no effect will come of introducing the spelling errors, as they are too few to notice. As part of future work, pre-tests should be run so that an \textit{optimal} amount of introduced spelling errors might be found. Furthermore, the sample size in our experiment was rather small. 20 participants is not enough to measure the effect of a relatively small manipulation in an experiment with 4 conditions. Future experiments would therefore benefit from a larger set of participants.
+
+\begin{figure}[ht]
+   \begin{center}
+      \fbox{\parbox{\columnwidth}
+         {\begin{description}[noitemsep]
+               \item [Interrogator] are you in love?
+               \item [Person 2] Love is just a culturally ingested biological urge.
+               \item [Interrogator] Why do you think that
+               \item [Person 2] I'd love to really dig down deep inot all my thoughts boaut that, but it's really not appropriate right
+               \item [Interrogator] how does your future lover look like?
+               \item [Person 2] Oh, my lover, yeah, we spend a lot of time together, you know, talking, joking.
+               \item [Person 2] We also like to travel around, We got stuck in a mud slide in the Phillippines last year - luckily no one was hurt.
+               \item [Person 2] Sharing that kind of intense experience with your lover really brings yuo together.
+      \end{description}}}
+   \end{center}
+   \caption{Experiment 19: Second conversation with Person 2}
+   \label{convex3}
+\end{figure}
 
 As part of the data analysis, we have found a strong positive correlation between prior knowledge of the Turing Test and the participants' confidence in identifying the computer as the computer. It seems that participants who had prior knowledge of the test were better equipped to test the chatbots, for example by asking questions that more effectively single out the computer; another example is that those participants were not surprised by the chatbot's ability to parse informal language, as were some of the participants less familiar with the Test and AI in general. For future work, considering the participants' knowledge of the test might prove important when designing the experiment and analyzing the results.
 
-We learn from the participants' responses in the questionnaire, that a number of participants did find the chatbots more human when spelling errors were introduced see figure \textbf{(number of figure with conversation)} (\textit{Person 2 made a typo [that's why I think he's the human]}). Conversely, some participants found the computer's perfectly punctuated and spelled responses as a telltale of the computer's identity see figure (number of figure with conversation) (\textit{the wording of person 2's answers and the perfect punctuation made me feel like they were a computer}). A recurring theme found in the participants' responses, is that they found their questions ill understood by the chatbots see figure (number of figure with conversation)(\textit{person 2 did not answer the last question correctly}), or the replies given to them odd see figure (number of figure with conversation)(\textit{Person 2 was the computer because he did not communicate in a logical manner. His answers were quite weird}) or out of place see figure \textbf{(number of figure with conversation)} (\textit{I don't think someone would respond "I'm happy to know you're doing fine" in a casual chat conversation..}). Further, it is evident by these responses that the chatbots' behaviour heavily influenced their attempt to pass as humans as part of the test.
+\begin{figure}[ht]
+   \begin{center}
+      \fbox{\parbox{\columnwidth}
+         {\begin{description}[noitemsep]
+               \item [sophiehorsman] Hey
+               \item [sophiehorsman] How are you?
+               \item [Person 2] Fine, thank you.
+               \item [sophiehorsman] good to hear
+               \item [sophiehorsman] can you tell me what you did this morning?
+               \item [Person 2] I don't know.
+               \item [sophiehorsman] you can't remember?
+               \item [Person 2] You're wrong. I can.
+               \item [sophiehorsman] why don't you know if you can tell me?
+               \item [Person 2] A good suggestion.
+      \end{description}}}
+   \end{center}
+   \caption{Experiment 4: First conversation with Person 2}
+   \label{convex4}
+\end{figure}
+
+We learn from the participants' responses in the questionnaire, that a number of participants did find the chatbots more human when spelling errors were introduced, see figure~\ref{convex1} (\textit{Person 2 made a typo [that's why I think he's the human]}).
+
+\begin{figure}[ht]
+   \begin{center}
+      \fbox{\parbox{\columnwidth}
+         {\begin{description}[noitemsep]
+               \item [Interrogator] hello
+               \item [Person 2] What do you hate doing?
+               \item [Interrogator] getting up early
+               \item [Person 2] OK.
+               \item [Person 2] Do you ever burn stuff?
+               \item [Interrogator] No it makes me shriek in a high-pitched voice, you?
+               \item [Person 2] Should I?
+               \item [Person 2] There are timers stuck all over our kitchen in hopes of reminding me tyhat I am suppoed to be cooking.
+      \end{description}}}
+   \end{center}
+   \caption{Experiment 20: First conversation with Person 2}
+   \label{convex1}
+\end{figure}
+
+Conversely, some participants found the computer's perfectly punctuated and spelled responses as a telltale of the computer's identity, see figure~\ref{convex2} (\textit{the wording of person 2's answers and the perfect punctuation made me feel like they were a computer}). A recurring theme found in the participants' responses, is that they found their questions ill understood by the chatbots, see figure~\ref{convex3} (\textit{person 2 did not answer the last question correctly}), or the replies given to them odd, see figure~\ref{convex4} (\textit{Person 2 was the computer because he did not communicate in a logical manner. His answers were quite weird}) or out of place, see figure \ref{convex5} (\textit{I don't think someone would respond "I'm happy to know you're doing fine" in a casual chat conversation..}).
+
+\begin{figure}[ht]
+   \begin{center}
+      \fbox{\parbox{\columnwidth}
+         {\begin{description}[noitemsep]
+               \item [Interrogator] hey what's up?
+               \item [Person 2] Just dandy, thanks. How are you? That is an interesting job.
+               \item [Interrogator] yeah it seems pretty fun
+               \item [Interrogator] whats your name\
+               \item [Person 2] My name is Rose.
+               \item [Interrogator] what a nice name!
+               \item [Interrogator] where are you from rose?
+               \item [Person 2] You're asking an awful lot of questions. This feels like an interrogation, not a conversation. I was born in San Francisco, United States.
+               \item [Interrogator] is it nice there?
+               \item [Person 2] It's not as nice as you might think.
+      \end{description}}}
+   \end{center}
+   \caption{Experiment 17: First conversation with Person 2}
+   \label{convex2}
+\end{figure}
+
+
+Further, it is evident by these responses that the chatbots' behaviour heavily influenced their attempt to pass as humans as part of the test.
+
+\begin{figure}[ht]
+   \begin{center}
+      \fbox{\parbox{\columnwidth}
+         {\begin{description}[noitemsep]
+               \item [Interrogator] How is it going?
+               \item [Person 2] Everything is going great with me. How about yourself?
+               \item [Interrogator] I'm fine, thank you very much :)
+               \item [Person 2] I am happy to know that you are doing fine.
+               \item [Interrogator] How's the weather at your place?
+               \item [Person 2] It's a fine day.
+               \item [Interrogator] What do you do for a living?
+               \item [Person 2] I'm a university professor, doing teaching and research.
+      \end{description}}}
+   \end{center}
+   \caption{Experiment 7: First conversation with Person 2}
+   \label{convex5}
+\end{figure}
 
 To conclude, in this experiment we have set out to investigate whether we can modify the Turing Test in favour of the computer, by manipulating the computer's responses via the introduction of spelling errors. In some cases our results show that adding spelling errors can have a benefit for the computer, yet it seems chatbots must come a long way still if they are to to give consistent and correct conversational responses, and pass as humans.
 
@@ -26,10 +125,10 @@ From the log files of the conversations with the chatbots (see Appendix), we con
                \item [Rose] I actually just redecorated my study. I had a smart lighting system fitted.
       \end{description}}}
    \end{center}
-   \caption{Example 1}
+   \label{Example1}
 \end{figure}
 
-The answer given by Rose in Example 1 is not the right answer to the question. The question is whether Rose studies, i.e. whether she is a student or whether she is learning a particular subject. The algorithm powering Rose did not catch that, but rather picked up the word \textit{study}, which is a type of room in the house, and constructed an answer related to that. The appropriate question for this answer here would be whether Rose has a study.
+The answer given by Rose in figure~\ref{Example1} is not the right answer to the question. The question is whether Rose studies, i.e. whether she is a student or whether she is learning a particular subject. The algorithm powering Rose did not catch that, but rather picked up the word \textit{study}, which is a type of room in the house, and constructed an answer related to that. The appropriate question for this answer here would be whether Rose has a study.
 
 But Searle's Chinese Room argument goes further. It says that even when a computer gives a seemingly good reply to the question it still doesn't understand its own reply - in the same way that Sam who is talking Chinese doesn't actually understand Chinese. To make this more concrete, we look at Example 2.
 
@@ -41,10 +140,10 @@ But Searle's Chinese Room argument goes further. It says that even when a comput
                \item [Mike] He's great. Far less boring than most politicians. And let's face it, government is all about corporate money, so the actual people who take office don't really matter.
       \end{description}}}
    \end{center}
-   \caption{Example 2}
+   \label{Example2}
 \end{figure}
 
-Example 2 shows a correct response from Mike, which could have been the response of a human. Searle's objection is that Mike doesn't really understand what he is saying, since he is only manipulating symbols. This means that even though Mike gives the appropriate response he doesn't know who Trump is and what the government is about, in the same way as that Sam wouldn't know what the Chinese characters stand for.
+Figure~\ref{Example2} shows a correct response from Mike, which could have been the response of a human. Searle's objection is that Mike doesn't really understand what he is saying, since he is only manipulating symbols. This means that even though Mike gives the appropriate response he doesn't know who Trump is and what the government is about, in the same way as that Sam wouldn't know what the Chinese characters stand for.
 
 It seems to be the case that for now Searle is right that computers don't understand the symbols that they are manipulating. There are many examples that the computer gives very strange answers and even if it gives an appropriate answer further questioning often reveals that it actually doesn't understand the words and concepts it is using (like \textit{Trump} or \textit{government}).
 
@@ -66,7 +165,7 @@ A more narrow statement related to Searle's argument is that a computer is not a
                \item [Mike] A town is larger than a village and smaller than a city.
       \end{description}}}
    \end{center}
-   \caption{Example 3}
+   \label{Example3}
 \end{figure}
 
 Humans would expect as an answer to such a question an enumeration of features of the town the person lives in, because the question explicitly states \textit{your town}. The answer from Mike is not entirely incorrect, but would rather be an answer to a question which would use the phrase \textit{living in a town} instead of \textit{your town}.
@@ -79,16 +178,12 @@ Humans would expect as an answer to such a question an enumeration of features o
                \item [Rose] I'm not good as some, but better than most.
       \end{description}}}
    \end{center}
-   \caption{Example 4}
+   \label{Example4}
 \end{figure}
 
-Although the answer by Rose in Ex. 4 is not really incorrect, it is also not an answer which a human would expect to such a question. An intuitive answer to such a question would be \textit{I'm (fine | ok | not feeling very well)}. However, Rose answers this question from a more broad point of view, rather than basing her answer on her emotional state at the current moment.
+Although the answer by Rose in figure~\ref{Example4} is not really incorrect, it is also not an answer which a human would expect to such a question. An intuitive answer to such a question would be \textit{I'm (fine | ok | not feeling very well)}. However, Rose answers this question from a more broad point of view, rather than basing her answer on her emotional state at the current moment.
 
-We have seen this in Examples 3 and 4, where the answer to the questions were not entirely incorrect, but were not the right answer to the human interpretation of the question.
-
-One of such human features the Turing test does take into account, but has nothing to do with intelligence, is making mistakes. One of such mistakes is discussed in the second alteration, which discusses the introduction of spelling errors in order to make the computer exhibit more human-like behavior. In our experiment, we investigated whether introducing these spelling errors allows a chatbot to perform better in the Turing Test.
-
-We can see from the results that, without spelling errors, 90\% of the participants correctly identified the computer. Therefore, even though Mike and Rose are among the best performing chatbots in the Loebner competition, we are far away of achieving the aimed score of 50\% when using these chatbots in a Turing Test. When using spelling errors, 70\% of the participants correctly identified the computer. The results thus show that when we introduce spelling errors to the chatbot's responses, we get closer to the aimed score of 50\%.
+This example shows that indeed the computer gets easily identified when it gives answers in a non-human way, even though the answers are not necessarily wrong or non-intelligent. In our conducted experiment, we used that idea when we generated spelling mistakes in the chatbot’s answers. We can see from the results that, without spelling errors, 90\% of the participants indicated that they are more confident about the chatbot being the computer than the human being a computer, i.e. 90\% correctly identified the computer if we transform their probabilistic answer into a binary scale. Therefore, even though Mike and Rose are among the best performing chatbots in the Loebner competition, we are far away of achieving the aimed score of 50\% when using these chatbots in a Turing Test. Nevertheless, the performance improved a lot by generating spelling errors; only 70\% of the participants  indicated that they are more confident about the chatbot being the computer than the human being a computer, i.e. 70\% correctly identified the computer if we transform their probabilistic answer into a binary scale. The results thus show that when we introduce spelling errors to the chatbot’s responses, we get closer to the aimed score of 50\%.
 
 The experiment has shown that the first practical objection is true, i.e. that the Turing Test takes into account human features which have nothing to do with intelligence, which thereby make it more difficult for a computer to pass. The experiment has also shown that we can partly mitigate this objection by implementing the second alteration. Future research should investigate whether using other programs which help the chatbots display more human-like behaviour can help decrease the correct identifications and in doing so assist in mitigating the first theoretical objection.
 
@@ -105,10 +200,12 @@ The second practical objection states that the Turing Test is too narrow for tes
                \item [Mike] I feel horrible. I think I picked up a bug.
       \end{description}}}
    \end{center}
-   \caption{Example 5}
+   \label{Example5}
 \end{figure}
 
-Example 5 shows how important it is that the chatbot has memory, as otherwise it would give itself away way too easily. Example 6 shows the importance of common knowledge. In the example, the chatbot fortunately has common knowledge, as the chatbot replies with a reasonable answer on Trump. However, if the chatbot did not know who Trump was, it would give its identity away immediately, since, unfortunately, knowing who Trump is nowadays is common knowledge.
+Figure~\ref{Example5} shows how important it is that the chatbot has memory, as otherwise it would give itself away way too easily. Figure~\ref{Example6} shows the importance of common knowledge. In the example, the chatbot fortunately has common knowledge, as the chatbot replies with a reasonable answer on Trump. However, if the chatbot did not know who Trump was, it would give its identity away immediately, since, unfortunately, knowing who Trump is nowadays is common knowledge.
+
+Future research in AI should investigate which specific tasks are needed for the chatbot to improve its performance. Questions to be addressed are: How can we improve the memory of the chatbot; How can we improve its common knowledge; How can we give the chatbot a personal identity? etc. By improving those skills, the chatbot will certainly become smarter in the eye of the interrogator. In this way we will understand better what features of intelligence are needed in order to improve the performance of a chatbot. Even if the test is too narrow to measure intelligence itself it can in this way surely be used to identify a crucial part of human intelligence, which has with all the skills needed in human communication.
 
 \begin{figure}[ht]
    \begin{center}
@@ -118,7 +215,7 @@ Example 5 shows how important it is that the chatbot has memory, as otherwise it
                \item [Mike] He's great. Far less boring than most politicians. And let's face it, government is all about corporate money, so the actual people who take office don't really matter.
       \end{description}}}
    \end{center}
-   \caption{Example 6}
+   \label{Example6}
 \end{figure}
 
 The second alteration, which introduces spelling errors, has already been discussed when discussing the first practical objection. The first alteration, which describes the usage of a probability, will now be discussed. In our experiment, the participants were able to identify either one of their conversation partners as the computer, on a probability scale, indicating how certain they were of their choice. The results of the experiment are now more fine-grained, as can be seen in the results section. By using a probability scale, we can now measure the participant's' identification on a ratio scale instead of on a nominal scale.
